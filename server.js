@@ -1,8 +1,17 @@
 const express = require('express');
-const YahooFinance = require('yahoo-finance2').default;
 const path = require('path');
 const cors = require('cors');
 const dotenv = require('dotenv');
+
+// Handle potential ESM/CJS export issues with yahoo-finance2
+let YahooFinance;
+try {
+    const yf = require('yahoo-finance2');
+    YahooFinance = yf.default || yf;
+} catch (e) {
+    console.error('Failed to load yahoo-finance2:', e);
+}
+
 const {
     calculateHistoricalVolatility,
     calculateBlackScholes,
