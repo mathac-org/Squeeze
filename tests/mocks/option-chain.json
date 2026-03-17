@@ -1,0 +1,42 @@
+{
+  "expirationDates": ["2026-06-19"],
+  "quote": {
+    "regularMarketPrice": 210.50
+  },
+  "calls": [
+    {
+      "strike": 200.00,
+      "bid": 15.20,
+      "ask": 15.50,
+      "lastPrice": 15.35,
+      "impliedVolatility": 0.185,
+      "inTheMoney": true
+    },
+    {
+      "strike": 210.00,
+      "bid": 7.80,
+      "ask": 8.00,
+      "lastPrice": 7.90,
+      "impliedVolatility": 0.202,
+      "inTheMoney": true
+    },
+    {
+      "strike": 220.00,
+      "bid": 2.45,
+      "ask": 2.60,
+      "lastPrice": 2.55,
+      "impliedVolatility": 0.221,
+      "inTheMoney": false
+    }
+  ],
+  "puts": [
+    {
+      "strike": 200.00,
+      "bid": 2.10,
+      "ask": 2.20,
+      "lastPrice": 2.15,
+      "impliedVolatility": 0.210,
+      "inTheMoney": false
+    }
+  ]
+}
