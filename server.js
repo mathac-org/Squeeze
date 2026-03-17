@@ -54,7 +54,7 @@ app.post('/api/analyze', async (req, res) => {
         }
         const underlyingPrice = optionData.quote.regularMarketPrice;
 
-        // Yahoo Finance v2 might wrap calls/puts inside an options array
+        // Yahoo Finance v2/v3 might wrap calls/puts inside an options array
         const chain = (optionData.options && optionData.options.length > 0) ? optionData.options[0] : optionData;
 
         // 2. Fetch Historical Data (1 year)
